@@ -9,8 +9,8 @@ Notes on the Destroy All Software series
  * Ruby: everything is a method call. 
 
 #### Vision
-  * Ruby is focusing on messages between objects, rather than data
-  * Python is optimising for data access
-
+ * Python is optimising for data access
+ * Ruby is focusing on messages between objects, rather than data
+  
 **Question** 
 Is Ruby more "object oriented" due to this fact?
