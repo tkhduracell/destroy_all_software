@@ -14,3 +14,9 @@ Notes on the Destroy All Software series
   
 **Question** 
 Is Ruby more "object oriented" due to this fact?
+
+### Rails: Where is correctness enforced?
+**Answer**
+In the database, or at least it should be. Use database layer validation and indices to enforce correctness.
+
+A lot of complexity in models/controllers is often a sign of a poorly designed database schemes. The solution is what we have been doing for 30 year, upfront design of the database. Of couse without preaching up-front application design and development.   
