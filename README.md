@@ -35,3 +35,25 @@ def congratulate
   CongratulationsMailer.send_congratulate commments 
 end
 ```
+
+### Half-functional ruby
+```ruby
+# Nasty IOstuff
+def main
+  Dir["*.md"].each do |path|
+    content = File.read path 
+    out = SafeSuff.new(content).stuff
+    File.write "#{path}.out"
+  end
+end
+
+# Pure functional, no side-effects
+class SafeStuff
+  attr_reader :content
+
+  def stuff
+    content.upcase
+  end
+end
+```
+
